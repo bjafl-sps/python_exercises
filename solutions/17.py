@@ -12,10 +12,10 @@ def palindrome(x):
     for i in x:
         if i.isalpha():
             l.append(i.lower())
-    print(''.join(l)
+    print(''.join(l))
     if l==l[::-1]:
-        print('palindrome'
+        print('palindrome')
     else:
-        print('Not a palindrome'       
+        print('Not a palindrome')
 
 palindrome("Go hang a salami I'm a lasagna hog.")

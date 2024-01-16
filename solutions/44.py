@@ -30,5 +30,5 @@ def find_balanced(n):
         return ''.join(s) + ' not balanced'
         
 for i in range(20):
-    print(find_balanced(50)
+    print(find_balanced(50))
 

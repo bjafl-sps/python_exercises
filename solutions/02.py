@@ -5,10 +5,10 @@ arguments and returns the largest of them.
 
 def max_of_three(a,b,c):
     if a>b and a>c:
-        print(a 
+        print(a)
     elif b>c:
-        print(b 
+        print(b)
     else:
-        print(c 
+        print(c)
         
 print(max_of_three(0,15,2))

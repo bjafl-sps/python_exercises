@@ -10,10 +10,10 @@ Write it in three different ways:
 
 #2
 l = ['apple', 'orange', 'cat']
-print(map( lambda x : len(x), l)
+print(map( lambda x : len(x), l))
 
-print(map( len,  l)
+print(map( len,  l))
 
 #3
-print([ len(i) for i in l]
+print([ len(i) for i in l])
 

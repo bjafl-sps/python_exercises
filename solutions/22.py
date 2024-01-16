@@ -21,29 +21,35 @@ Note that since English has 26 characters, your ROT-13 program will be able to b
 '''
 
 
+d = {'a':'n', 'b':'o', 'c':'p', 'd':'q', 'e':'r', 'f':'s', 'g':'t', 'h':'u', 
+    'i':'v', 'j':'w', 'k':'x', 'l':'y', 'm':'z', 'n':'a', 'o':'b', 'p':'c', 
+    'q':'d', 'r':'e', 's':'f', 't':'g', 'u':'h', 'v':'i', 'w':'j', 'x':'k',
+    'y':'l', 'z':'m', 'A':'N', 'B':'O', 'C':'P', 'D':'Q', 'E':'R', 'F':'S', 
+    'G':'T', 'H':'U', 'I':'V', 'J':'W', 'K':'X', 'L':'Y', 'M':'Z', 'N':'A', 
+    'O':'B', 'P':'C', 'Q':'D', 'R':'E', 'S':'F', 'T':'G', 'U':'H', 'V':'I', 
+    'W':'J', 'X':'K', 'Y':'L', 'Z':'M'}
+
 def rot_decoder(x):
     new =[]
-    d = {'a':'n', 'b':'o', 'c':'p', 'd':'q', 'e':'r', 'f':'s', 'g':'t', 'h':'u', 
-       'i':'v', 'j':'w', 'k':'x', 'l':'y', 'm':'z', 'n':'a', 'o':'b', 'p':'c', 
-       'q':'d', 'r':'e', 's':'f', 't':'g', 'u':'h', 'v':'i', 'w':'j', 'x':'k',
-       'y':'l', 'z':'m', 'A':'N', 'B':'O', 'C':'P', 'D':'Q', 'E':'R', 'F':'S', 
-       'G':'T', 'H':'U', 'I':'V', 'J':'W', 'K':'X', 'L':'Y', 'M':'Z', 'N':'A', 
-       'O':'B', 'P':'C', 'Q':'D', 'R':'E', 'S':'F', 'T':'G', 'U':'H', 'V':'I', 
-       'W':'J', 'X':'K', 'Y':'L', 'Z':'M'}
     for i in x:
         new.append(d.get(i,i))
-    print(''.join(new)
-    
-rot_decoder('Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!')
+    print(''.join(new))
+
+s = 'Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!'
+print('Decoding ', s)
+rot_decoder(s)
 
 # Our decoder function can also encode the message since we have 26 characters. But in case if isn't you can use below strategy. 
 def rot_encoder(x):
+    new =[]
     key_inverse = { v:k for k,v in d.items()} 
     for i in x:
         new.append(d.get(i,i))
-    print(''.join(new)
+    print(''.join(new))
 
-rot_decoder('Caesar cipher? I much prefer Caesar salad!')
+s = 'Caesar cipher? I much prefer Caesar salad!'
+print('Encoding ', s)
+rot_encoder(s)
 
         
     

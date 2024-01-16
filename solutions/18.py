@@ -11,12 +11,12 @@ def pangram(x):
         if i in x.lower():
             status =1
         else:
-            print('not a pangram'
+            print('not a pangram')
             status =0
             break
         
     if status==1:
-        print('pangram'  
+        print('pangram')
         
 pangram('The q brown fox jumps over the lazy dog')
 

@@ -16,7 +16,7 @@ def tanslate(x):
     l = x.split(' ')
     for i in l:
         new.append(d[i])
-    print(new 
-    print(' '.join(new)         
+    print(new)
+    print(' '.join(new))
         
 tanslate('merry christmas and happy new year')

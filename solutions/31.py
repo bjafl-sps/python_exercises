@@ -23,7 +23,7 @@ def reduce1(f, l):
         new = f(new, i)
     return new
 
-print(reduce1(max, [1,2,-45,3,0])
+print(reduce1(max, [1,2,-45,3,0]))
         
 
 

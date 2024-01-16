@@ -13,4 +13,4 @@ def avg_length(x):
         count += len(word)
     return count/len(words)
 
-print(avg_length('38.txt')
+print(avg_length('38.txt'))

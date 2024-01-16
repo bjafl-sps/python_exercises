@@ -33,9 +33,9 @@ this isn't true... Well, with a probability of .9 it isn't."
 
 # Method 1
 for i in re.findall(r'[A-Z][a-z]+\.?.*?[.?!](?= [A-Z]|$)', text):
-    print(i
+    print(i)
 
-print('*'*80
+print('*'*80)
 
 #Method 2 - using verbose mode. 
 for i in re.findall(r'''
@@ -44,12 +44,12 @@ for i in re.findall(r'''
                         [.?!]            # ends with a (.)(?)(!)
                         (?=\s[A-Z]|$)    # is followed by whitespace and a capital letter
                      ''', text, re.X):
-    print(i
+    print(i)
 
-print('*'*80 
+print('*'*80)
 
 #Method 3
 for i in re.split(r'(?<=[^Mr|Mrs|Dr][.?!])\s(?=[A-Z])', text):
-    print(i
+    print(i)
 
 

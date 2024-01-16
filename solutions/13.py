@@ -11,7 +11,7 @@ def max1(l):
             max = l[i]
         elif l[i+1]>max:
             max = l[i+1]
-    print(max
+    print(max)
     
 
 max1([1,2,34,4,6,345])

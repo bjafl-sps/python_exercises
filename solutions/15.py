@@ -4,7 +4,7 @@ def maps(x):
     k=[]
     for i in x:
         k.append(len(i))
-    print(max(k)
+    print(max(k))
     
         
 maps(['apple','orange','cat'])

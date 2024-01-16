@@ -40,6 +40,9 @@ sealeo silcoon simisear snivy snorlax spoink starly tirtouga trapinch treecko
 tyrogue vigoroth vulpix wailord wartortle whismur wingull yamask'''.split()
 
 
+
+
+
 # Method 1
 def find(chain):
     last_character = chain[-1][-1]
@@ -51,18 +54,16 @@ def find(chain):
         return max( (find(chain+[i]) for i in options), key=len)            
     
  
-start = time.clock()   
+start = time.time()   
 
 d = defaultdict(set)       
 for word in pokemon:
     d[word[0]].add(word)
 
-print(max( (find([word]) for word in pokemon), key=len)
+print(max( (find([word]) for word in pokemon), key=len))
 
 end = time.clock()
-print(end - start
-
-
+print(end - start)
 
 # Method 2 try bottom down approach
 def find2(chain):
@@ -74,14 +75,14 @@ def find2(chain):
     else:
         return max( (find2([i]+ chain) for i in options), key=len)
     
-start = time.clock()
+start = time.time()
 d = defaultdict(set)
 for word in pokemon:
     d[word[-1]].add(word)
       
-print(max( (find2([word]) for word in pokemon), key=len)
-end = time.clock()
-print(end - start 
+print(max( (find2([word]) for word in pokemon), key=len))
+end = time.time()
+print(end - start)
 
 
 
@@ -106,7 +107,7 @@ d = defaultdict(set)
 for word in pokemon:
     d[word[0]].add(word)
 
-print(max( [find([word]) for word in pokemon], key=len)
+print(max( [find([word]) for word in pokemon], key=len))
 
 
 
@@ -132,7 +133,7 @@ d = defaultdict(set)
 for word in pokemon:
     d[word[0]].add(word)
 
-print([find([word]) for word in pokemon]
+print([find([word]) for word in pokemon])
 
 
 

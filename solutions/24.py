@@ -18,7 +18,7 @@ def make_3sg_form(x):
         x += 'es'
     else:
         x += 's'
-    print(x
+    print(x)
     
 make_3sg_form('fix')
         

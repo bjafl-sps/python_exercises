@@ -21,7 +21,7 @@ Clue: [t][i][g][e][r]
 
 
 def lingo(x):
-    n = raw_input('Please input your five letter guess!\n')
+    n = input('Please input your five letter guess!\n')
     
     while n != x:
         output =''
@@ -33,9 +33,9 @@ def lingo(x):
                     output += '(' + i + ')'
             else:
                 output += i 
-        print('Clue:' + output  
-        n = raw_input('Please input your five letter guess!\n') 
-    print('Success'    
+        print('Clue:' + output)
+        n = input('Please input your five letter guess!\n') 
+    print('Success')
             
 lingo('snake')
 

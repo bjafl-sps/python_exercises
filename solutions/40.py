@@ -28,11 +28,11 @@ def anagram(x):
     for i in anagrams:
         l.append(''.join(i))
         anagram = random.choice(l)    #again randomly choose the anagram otherwise it would always contain the last permutation  
-    print('Colour word anagram: %s' %anagram
-    guess = raw_input('Guess the colour word!\n')
+    print('Colour word anagram: %s' %anagram)
+    guess = input('Guess the colour word!\n')
     while guess!=word:
-            guess = raw_input('Guess the colour word!\n')
-    print('Correct!'
+            guess = input('Guess the colour word!\n')
+    print('Correct!')
 
 anagram(['blue','red','orange','violet','yellow','black','green'])
     

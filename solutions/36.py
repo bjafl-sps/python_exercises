@@ -11,7 +11,7 @@ def hapax(x):
     for word in re.findall('\w+', f.read().lower()):
         d[word] = d.get(word,0) + 1
     f.close()
-    print([ k for k, v in d.items() if v==1]
+    print([ k for k, v in d.items() if v==1])
 
 hapax('36.txt')
         

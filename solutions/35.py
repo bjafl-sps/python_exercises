@@ -20,7 +20,7 @@ a float indicating the length of the pause between each spoken ICAO word, and a 
 the length of the pause between each word spoken.
 '''
 
-import pyttsx
+import pyttsx3
 
 def speak_ICAO(x):
     d = {'a':'alfa', 'b':'bravo', 'c':'charlie', 'd':'delta', 'e':'echo', 'f':'foxtrot',
@@ -28,7 +28,7 @@ def speak_ICAO(x):
      'm':'mike', 'n':'november', 'o':'oscar', 'p':'papa', 'q':'quebec', 'r':'romeo',
      's':'sierra', 't':'tango', 'u':'uniform', 'v':'victor', 'w':'whiskey', 
      'x':'x-ray', 'y':'yankee', 'z':'zulu'}
-    engine = pyttsx.init()
+    engine = pyttsx3.init()
     for i in x.lower():
         engine.say(d.get(i,i))
         engine.runAndWait()

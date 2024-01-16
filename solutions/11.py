@@ -10,7 +10,7 @@ def generate_n_chars(n,x):
     k=[]
     for i in range(n):
         k.append(x)
-    print(''.join(k)
+    print(''.join(k))
     
 generate_n_chars( 5, 't')
         

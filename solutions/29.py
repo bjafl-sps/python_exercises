@@ -5,6 +5,6 @@ that takes a list of words and an integer n and returns the list of words that a
 
 n=2
 x = ['abc','b','adfadfasd']
-print(filter(lambda x: len(x)>n, x)
+print(filter(lambda x: len(x)>n, x))
 
 

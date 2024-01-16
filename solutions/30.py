@@ -13,7 +13,7 @@ def translate(x):
         "new":"nytt",
         "year":"ar"}
     l = x.split()
-    print(map ( lambda x: d[x], l)
+    print(map ( lambda x: d[x], l))
     
 
 translate("merry new christmas and happy new year")

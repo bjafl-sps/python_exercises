@@ -189,7 +189,7 @@
       In any case, this isn't true...  
       Well, with a probability of .9 it isn't.
       
-43. An anagram is a type of word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once; e.g., orchestra = carthorse. Using the word list at http://www.puzzlers.org/pub/wordlists/unixdict.txt, write a program that finds the sets of words that share the same characters that contain the most words in them.
+43. An anagram is a type of word play, the result of rearranging the letters of a word or phrase to produce a new word or phrase, using all the original letters exactly once; e.g., orchestra = carthorse. Using the word list at http://wiki.puzzlers.org/pub/wordlists/unixdict.txt, write a program that finds the sets of words that share the same characters that contain the most words in them.
 
 44. Your task in this exercise is as follows:
 
@@ -225,18 +225,5 @@ Examples:
   - "board": makes "bad" and "or".
   - "waists": makes "wit" and "ass".  
   
-  Using the word list at http://www.puzzlers.org/pub/wordlists/unixdict.txt, write a program that goes through each word in the list and tries to make two smaller words using every second letter. The smaller words must also be members of the list. Print the words to the screen in the above fashion.
+  Using the word list at http://wiki.puzzlers.org/pub/wordlists/unixdict.txt, write a program that goes through each word in the list and tries to make two smaller words using every second letter. The smaller words must also be members of the list. Print the words to the screen in the above fashion.
 
-
-  ##### Fun Exercises
-  
-47. Google Code Jam
-  
-  - https://code.google.com/codejam/contest/351101/dashboard#s=p0
-  - https://code.google.com/codejam/contest/351101/dashboard#s=p1
-
-48. Make a Python script that sends an email to a Gmail User. Finally convert it to a bomb. The script will qualify as a bomb if it is able to send 50 emails to the user. 
-
-49. Make a Python script which adds comments to your any of the post on your timeline. The script will qualify as a bomb if it is able to comment 50 times on a single post.
-
-50. Make a Python script which downloads the You tube video. The video should be saved for future use.

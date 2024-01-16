@@ -8,7 +8,7 @@ def filter_long_words(x,n):
     for i in x:
         if len(i)>n:
             k.append(i)
-    print(k
+    print(k)
     
     
 filter_long_words(['apple','orange','cat'], 4)

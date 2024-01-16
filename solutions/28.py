@@ -5,4 +5,4 @@ Use only higher order functions.
 
 
 l = ['apple', 'orange', 'cat']
-print(max(map( len,  l))
+print(max(map( len,  l)))

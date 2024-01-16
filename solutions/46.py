@@ -8,21 +8,22 @@ is used will produce a four-letter word and a three-letter word.
 Here are two examples:
     "board": makes "bad" and "or".
     "waists": makes "wit" and "ass".
-Using the word list at http://www.puzzlers.org/pub/wordlists/unixdict.txt, 
+Using the word list at http://wiki.puzzlers.org/pub/wordlists/unixdict.txt, 
 write a program that goes through each word in the list
 and tries to make two smaller words using every second letter.
 The smaller words must also be members of the list. 
-print(the words to the screen in the above fashion.
+Print the words to the screen in the above fashion.
 '''
 
 
-import urllib2
+import urllib.request
 import time
 
-data = urllib2.urlopen('http://www.puzzlers.org/pub/wordlists/unixdict.txt').read()
-words_list = set(data.split('\n')) #Try chaging set to list "list(data.split('\n'))" and notice the difference in timings. 
+data = urllib.request.urlopen('http://wiki.puzzlers.org/pub/wordlists/unixdict.txt')
+text = data.read().decode()
+words_list = set(text.split('\n')) #Try chaging set to list "list(data.split('\n'))" and notice the difference in timings. 
 
-start = time.clock()
+start = time.time()
 for line in words_list:
     total =[]
     alternate, alternate2 = '',''
@@ -35,6 +36,6 @@ for line in words_list:
     if alternate2 in words_list and len(alternate2)>2:
         total.append(alternate2)
     if len(total)==2:
-        print("%s: makes %s and %s" %(line,alternate, alternate2)
-end = time.clock()
-print(end-start
+        print("%s: makes %s and %s" %(line,alternate, alternate2))
+end = time.time()
+print(end-start)

@@ -6,8 +6,8 @@ is_palindrome("radar") should return True.
   
 def is_palindrome(x):
     if x == x[::-1]:
-        print(True
+        print(True)
     else:
-        print(False
+        print(False)
         
 is_palindrome("aradar")

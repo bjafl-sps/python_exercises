@@ -15,6 +15,6 @@ def semordnilap(x):
         a = words[0]
         words.remove(a)
         if a[::-1] in words:
-            print(a + ' and ' + a[::-1] + ' are semordnilap'
+            print(a + ' and ' + a[::-1] + ' are semordnilap')
                 
 semordnilap('33.txt')

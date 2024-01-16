@@ -10,7 +10,7 @@ f_out = open('37_out.txt', 'w')
 
 count =1
 for i in f:
-    print(i
+    print(i)
     f_out.write(str(count) + '. ' + i)
     count +=1
     
